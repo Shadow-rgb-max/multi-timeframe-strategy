@@ -46,7 +46,7 @@ export function positionSize(signal: Signal, accountUsd: number, riskPct: number
 }
 
 function esc(s: string): string {
-  return s.replace(/&/g, "&").replace(/</g, "<").replace(/>/g, ">");
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
 export function formatTelegramHtml(
