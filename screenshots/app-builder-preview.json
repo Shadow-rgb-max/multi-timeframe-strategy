@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Polaris",
+      "hasCanvas": false,
+      "bodyTextLen": 1195,
+      "bodyTextHash": "02177e6681c2614069648783ef40940c763f913990cf959d82fd2ca0aba63f24",
+      "bodyTextPrefix": "Polaris Сигналы Binance · Северный тренд · 4H Стратегия Telegram",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Polaris",
+      "hasCanvas": false,
+      "bodyTextLen": 1177,
+      "bodyTextHash": "142fdc75e947d4ce19e393588cd56048993dcf93dd60235cddfab2130e087d55",
+      "bodyTextPrefix": "Polaris Сигналы Binance · Северный тренд · 4H Стратегия Telegram",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

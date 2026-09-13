@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-background: #0c0d0b;
+  --color-foreground: #e8e6df;
+  --color-card: #141512;
+  --color-raised: #1c1d19;
+  --color-primary: #d5d2c8;
+  --color-primary-foreground: #0c0d0b;
+  --color-secondary: #1c1d19;
+  --color-secondary-foreground: #e8e6df;
+  --color-muted: #8f9088;
+  --color-muted-foreground: #8f9088;
+  --color-subtle: #6a6b64;
+  --color-border: color-mix(in oklab, #e8e6df 12%, transparent);
+  --color-ring: #d5d2c8;
+  --color-long: #7d9a7a;
+  --color-short: #b57a72;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+}
+
+:root {
+  --shadow-border: 0 0 0 1px color-mix(in oklab, #e8e6df 8%, transparent);
+  --shadow-border-hover: 0 0 0 1px color-mix(in oklab, #e8e6df 18%, transparent);
+  --motion-stagger: 40ms;
+  --motion-micro: 80ms;
+  --motion-quick: 150ms;
+  --motion-fast: 250ms;
+  --motion-medium: 350ms;
+  --motion-slow: 400ms;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-smooth-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+body {
+  min-height: 100dvh;
+  font-family: var(--font-sans);
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
